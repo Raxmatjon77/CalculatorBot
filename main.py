@@ -2,7 +2,7 @@ from  telebot import TeleBot,types
 from functions import adduser
 from  btns import buttons
 import  functions
-bot=TeleBot("6642695237:AAEVsG1yXHflDfYZLRk95yeMP7mUyLVNa0Y")
+bot=TeleBot(token)
 @bot.message_handler(commands=["start"])
 def start(msg:types.Message):
     adduser(msg.from_user.id)
